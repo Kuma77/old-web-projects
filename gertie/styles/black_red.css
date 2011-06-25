@@ -1,0 +1,232 @@
+/*------------------------------
+--Gertie.css
+--tilered style, a red theme with a banner depicting a movie auditorium.
+-------------------------------*/
+
+html {
+	width:100%;
+	margin:auto;
+	background-color: #000000;
+}
+
+body {
+	width:100%;
+	margin:auto;
+	background-color: #000;
+}
+
+a{
+	color: #AA0000;
+	text-decoration: none;
+}
+
+a:hover{
+	text-shadow: #F00 0px 0px 15px;
+}
+/*-----------------------------
+  Generic
+------------------------------*/
+
+.small_bold{
+	font-size: small;
+	font-weight: bold;
+}
+
+h1{
+	color: orange;
+}
+
+.pref_ok {
+	font-weight: bold;
+	color: red;
+
+}
+/*-----------------------------
+  Movies
+------------------------------*/
+.movie{
+	width:auto;
+	display: block;
+}
+
+.thumbnail{
+	height:100px;
+	float: left;
+
+}
+
+.descriptive{
+}
+
+
+/*-----------------------------
+  Body
+------------------------------*/
+#content{
+	color: #d30900;
+	width: 780px;
+	margin: 10px;
+	border: 10px #AAA;
+	background-color: black;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	padding: 10px;
+}  
+
+/*-----------------------------
+  Header
+-------------------------------*/
+#header{
+	width: 800px;
+	height: 230px;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#banner{
+	text-align: center;
+	background-image: url("../images/auditorium.jpg");
+	width: 800px;
+	height: 159px;
+}
+
+#banner a{
+	color: transparent;
+}
+
+#banner a:hover{
+}
+
+#menu{}
+
+.tab{
+	display: inline;
+	text-align: center;
+	background-color: #FDDF9F;
+	border: solid 1px;
+	border-color: #7D6329;
+	padding: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 70px;
+	height:25px;
+}
+
+.tab a{
+  text-size: x-small;
+
+}
+
+#links{ 
+	border: none;
+	float: left;
+	height: 40px;
+	margin: 10px;
+}
+
+#search{
+	font-size: small; 
+	text-align: center;
+  color: #FFF;
+	width: auto;
+	height: 50px;
+	padding: 5px;
+	float: right;
+}
+
+#title{
+	display: inline;
+	margin-left: 600px;
+	padding-top: 300px;
+	color: #7E2B1D;
+	font-size: xx-large;
+	font-weight: bold;
+  text-shadow:#FFF 0px 0px 30px;;
+}
+
+fieldset{
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+
+/*-----------------------------
+  Footer
+-------------------------------*/
+#footer{
+	background-color: #78141C;
+	text-align:center;
+	border: 1px #403929;
+	
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#validations{
+  border: none;
+}
+
+#validations a{
+	color: transparent;
+}
+
+#mentions a{
+	color: orange;
+}
+
+#copyright{}
+
+
+/*-----------------------------
+  Producers
+------------------------------*/
+
+.producer{
+	display: table;
+	margin: 5px;
+	width: 300px;
+	border: dotted 1px red;
+}
+
+/*-----------------------------
+  Actors
+------------------------------*/
+
+.actor{
+	display: table;
+	margin: 5px;
+	width: 300px;
+	border: dotted 1px red;
+}
+
+
+/*-----------------------------
+  Movies
+------------------------------*/
+
+.movie{
+	display: table;
+	margin: 5px;
+	width: 300px;
+	height: 180px;
+	border: dotted 1px red;
+}
+
+/*-----------------------------
+  Search result
+------------------------------*/
+
+.search_result{
+	display: table;
+	margin: 5px;
+	width: 300px;
+	height: 180px;
+	border: dotted 1px red;
+}
+
+

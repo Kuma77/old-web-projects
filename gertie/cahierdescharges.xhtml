@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="fr" >
+<head>
+<title>Cahier des Charges du site Cinéma</title>
+<meta name="author" content="..." />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+
+
+<body>
+
+<h1>Cahier des charges du site "Gertie"</h1>																			  
+<hr />
+<h4>Nom du site : Gertie</h4>
+<h4>Nom : Guillaume Ardaud</h4>	
+<h4>Groupe : A2</h4>
+<hr />
+
+<h2>Sommaire</h2>
+<h3><a href="#objectifs">1/ Objectifs du site </a></h3>
+<h3><a href="#public">2/ Public visé </a></h3>
+<h3><a href="#architecture">3/ Architecture du site </a></h3>
+<h4><a href="#structure">3.1/ Structuration des pages </a></h4>
+<h4><a href="#description">3.2/ Description brève du contenu des pages </a></h4>
+<h3><a href="#choix_graphiques">4/ Choix graphiques </a></h3>
+<h4><a href="#palette">4.1/ Palette graphique </a></h4>
+<h4><a href="#squelette">4.2/ Squelette du site </a></h4>
+<h4><a href="#accueil">4.3/ Spécificité de la page d'accueil </a></h4>
+<h3><a href="#feedback">5/ Retour utilisateur et développement</a></h3>
+<h3><a href="#conclusion">6/ Conclusion </a></h3>
+
+<br />
+<hr />
+
+<a name="objectifs"><h2>1.Objectifs du site</h2></a>
+
+<p>
+Le but de Gertie est d'offrir une interface simple, mais néanmoins complète, pour que l'internaute puisse accéder à une variété d'informations relatives au cinéma à Grenoble. Cela inclue des informations telles que les horaires des séances, l'adresse des cinémas, le prix des places,... mais aussi des informations plus générales, comme par exemple la biographie du metteur en scène de l'un des films, ou alors la liste des films que l'on peut voir à Grenoble dans lequel à tourné un acteur donné.
+</p>
+
+<br />
+<hr />
+
+<a name="public"><h2>2.Public visé</h2></a>
+
+<p>
+Le public visé est un public très général, de consommateurs, qui n'ont besoin que des informations les plus rudimentaires (ainsi, des informations telles que les techniques de production d'un film par exemple, sont absentes du site). Pour la plus grande majorité, ces utilisateurs seront néophyte à l'informatique, et il conviendra donc de n'utiliser aucun terme technique et d'avoir recours à une abstraction la plus grande possible, afin qu'il n'y ait rien qui s'intercale entre eux mêmes et les informations.
+</p>
+
+<br />
+<hr />
+
+<a name="architecture"><h2>3. Architecture</h2></a>
+
+<p>
+Le site repose sur le langage PHP, et les langages de balisage xHTML/CSS. Il fait légérement appel au Javascript, et à recours à une base de données PostgreSQL (bien qu'il soit aussi compatible MySQL, cf. plus bas). Bien qu'elle ne soit pas très complexe, la structure du code comporte quelques subtilités, et ce afin d'avoir un code le plus modulaire possible. En effet, Gertie est compatible avec de multiples base de données, peut adopter dynamiquement divers designs, et supporte dynamiquement un nombre illimité de langues (par dynamique, nous entendons qu'il n'est pas nécessaire de redémarrer le serveur ou effectuer une réinstallation de Gertie, par exemple).
+</p>
+
+<br />
+<hr />
+<a name="structure"><h3>3.1. Structuration des pages </h3></a>
+
+<p>
+Chaque page est conçue sur le même modèle. L'entête (header) contient une bannière graphique, des liens vers la page d'accueil, chaque catégorie de pages, ainsi qu'un champ de recherche. Le pied de page (footer) contient les liens vers des méta-informations concernant Gertie, les mentions légales, ainsi que les logos des technologies utilisées et normes respectées.
+</p>
+<p>
+Le contenu de la page lui même (body) contient toutes les informations appropriées à la requête de l'utilisateur. Si l'information est multiple (par exemple détails de plusieurs films), elle est répartie dans des &lt;div&gt; pour en faciliter l'agencement via CSS.
+</p>
+
+<br />
+<hr />
+<a name="description"><h3>3.2. Description brève du contenu des pages </h3></a>
+
+<p>
+Le coeur du site contient 10 pages de contenu principales. On retrouve:
+</p>
+<ul>
+<li>La page d'accueil</li>
+<li>La page recensant tous les films</li>
+<li>La page recensant tous les acteurs</li>
+<li>La page recensant tous les metteurs en scène</li>
+<li>La page recensant tous cinémas à Grenoble</li>
+<li>La page donnant les détails d'un film en particulier</li>
+<li>La page donnant les détails d'un acteur en particulier</li>
+<li>La page donnant les détails d'un metteur en scène en particulier</li>
+<li>La page donnant les détails d'un cinéma à Grenoble en particulier</li>
+<li>La page des résultats d'une recherche</li>
+</ul>
+
+
+<p>
+En plus de ces pages majeures en terme de fonctionnalités, on retrouve les 4 pages mineures suivantes:
+</p>
+
+<ul>
+<li>La page de configuration du site, permettant de choisir la langue et l'apparence de Gertie</li>
+<li>La page donnant quelques détails sur le site en lui-même</li>
+<li>La page recensant les membres de l'équipe composant Gertie</li>
+<li>Le cahier des charges</li>
+</ul>
+
+<br />
+<hr />
+<a name="choix_graphiques"><h2>4. Choix graphiques</h2></a>
+
+<p>
+Comme tout site web, l'information délivrée par Gertie est visuelle; il faut donc attacher une attention toute particulière à son apparance. Bien que ne rivalisant pas en richesse artistique avec certains sites, l'interface de Gertie se veut claire et efficace grâce au suivi de quelques règles.
+</p>
+
+<br />
+<hr />
+
+<a name="palette"><h3>4.1. Palette graphique</h3></a>
+<p>
+J'avais 2 préoccupations principales pour le design de Gertie. Je voulais tout d'abord qu'il soit sobre et discret. Ensuite, je voulais mettre l'accent sur l'accessibilité aux personnes étant atteintes d'une déficience visuelle.</p>
+<p>
+Pour le premier point, n'étant que très peu doué en design graphique, l'outil <a href="http://kuler.adobe.com">Kuler</a>, d'Adobe, a été utilisé pour le design des différentes couleurs du site. Adobe étant une entreprise dominante en la matière, j'étais sûr d'avoir une gamme de couleur correcte et s'accordant bien ensemble avec leur outil. Les 3 thèmes, qui ont été tous été conçus avec l'aide de Kuler, sont satisfaisant dans ce sens.
+</p>
+
+<p>
+Pour le deuxième et dernier point, j'ai utilisé un outil appellé <a href="http://michelf.com/projects/sim-daltonism/">Sim Daltonism</a> (disponible uniquement sur Mac OS X, mais des équivalents Windows/Linux doivent exister). Ce logiciel permet de simuler la vision du site web par une personne atteinte de daltonisme. Ainsi, voici le site tel qu'il est vu par une personne atteinte de tritanopie, avec le style "Rouge et noir" (cliquez pour agrandir):<br />
+<a href="./cdc/tritanopia.png"><img src="./cdc/tritanopia_thumb.png" /></a><br />
+On constate que le site reste néanmoins très lisible, grâce à une palette adaptée. J'ai donc établi 3 styles différents:
+<ul>
+<li>Vert olive, très lisible pour les protanopes</li>
+<li>Rouge et noir, très lisible pour les tritanopes</li>
+<li>Bleu océan, très lisible pour les deuteranopes</li>
+</ul>
+</p>
+<br />
+<hr />
+
+<a name="squelette"><h3>4.2. Squelette du site</h3></a>
+
+<p><a href="./cdc/squelette.png"><img src="./cdc/squelette_thumb.png" /></a></p>
+
+
+<br />
+<hr />
+
+<a name="accueil"><h3>4.3. Spécificité de la page d'accueil</h3></a>
+
+<p>
+La page d'accueil étant la première page vue par un utilisateur lors de sa première visite, il convient qu'elle ait un contenu permettant à l'utilisateur de comprendre rapidement a) ce que le site fait, et b) comment. Ainsi, le premier paragraphe explique concisement comment le visiteur peut se servir de Gertie.
+
+Ensuite, une ligne indique à l'utilisateur qu'il peut configurer Gertie dans une autre langue, ou un autre style. Cela permet notamment aux personnes atteintes d'un trouble de la vision de pouvoir configurer le site instantanément (comme il en a été parlé dans la partie sur <a href="#palette">la charte graphique</a>.
+
+Enfin, pour les utilisateurs réguliers du site, un encadré dynamique leur présente un film, acteur ou metteur en scène aléatoirement, afin qu'ils puissent avoir une idée de film à aller voir.
+</p>
+
+<br />
+<hr />
+<a name="feedback"><h2>5. Retour utilisateur et développement</h2></a>
+
+<p>
+Au cours du développement du site web, j'ai trouvé intéressat de le faire visiter à des amis régulièrement pour qu'ils puissent fournir un retour quand à son efficacité, et que je puisse corriger les défauts à leur source. En plus de cela, j'ai constaté qu'il était encore plus efficace de leur fournir une liste d'opérations usuelles à effectuer, et de noter la facilité avec laquelle ils ont réussi à les effectuer sur une échelle de 1 à 5, en indiquant si possible les difficultées qu'ils ont encontrées. Voici un exemple de fichier que je leur ai fourni, vers le milieu du développement:
+</p>
+<pre>
+Merci de réaliser les opérations suivantes et, pour chacun d'entre elles, noter la facilité avec laquelle vous êtes arrivés à l'exécuter 
+sur une échelle de 1 à 5. Si vous le pouvez, notez ce qui vous a retardé dans votre tâche.
+
+- Vous voulez aller voir un film de Sofia Coppola - pour cela, il vous faudrait la liste de tous les films qu'elle a réalisé.
+
+- Vous aimeriez aller voir le film "Eternal Sunshine of the Spotless Mind" avec un ami dès que possible - 
+il vous faut l'heure et le lieu de la prochaine projection.
+
+- Vous êtes un touriste anglais voulant aller au cinéma à Grenoble, mais vous ne comprenez pas le site en français - 
+mettez le en anglais.
+
+- Vous avez récemment vu Natalie Portman, et aimeriez voir un autre de ses films - trouvez
+
+- Vous êtes une entreprise de loisirs, et aimeriez racheter le site web. 
+Pour cela, il vous faut une manière de contacter le webmaster, ainsi que quelques détails techniques sur Gertie.
+
+- Ayant des problèmes visuels, notamment dans la perception du vert, vous avez besoin de changer l'apparence visuelle du site.
+</pre>
+
+
+<br />
+<hr />
+
+<a name="conclusion"><h2>6. Conclusion</h2></a>
+
+<p>
+Au final, la création de Gertie m'aura permis de développer mes connaissances en matière de développement web et de mise en page. En effet, il s'agit du premier site web que je réalise, la programmation web ne m'ayant jamais interpellé auparavant.
+</p>
+<p>
+Cependant, bien qu'aussi complet que possible, Gertie n'est bien entendu pas fini. Par question de temps, je n'ai pas pû développer certaines fonctionnalités qui auraient été intéressantes, tel qu'une agrégation par flux RSS, ou une attention plus forte à l'aspect graphique, celui de Gertie étant peu professionnel. De plus pour questions techniques (pas d'accès en écriture à la base de données par exemple), il m'a été impossible de coder une page d'administration, entre autres, qui aurait permis à l'administrateur du site de le mettre à jour de manière aisée et paramétrable. 
+</p>
+<p>
+Je pense néanmoins que le site tel que je l'ai conçu est relativement exhaustif, et couvre largement tout ce qui a été demandé dans le sujet, et constitue donc une base plus que satisfaisante.
+</p>
+
+<br />
+<hr />
+<div>
+Document XHTML1.1 <a href="http://transit.iut2.upmf-grenoble.fr/cgi-bin/wdg-html-validator.pl?url=referer&amp;spider=yes"> validé par WDG </a>
+</div>
+
+</body>
+</html>

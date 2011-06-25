@@ -1,0 +1,151 @@
+body {
+	background-color: #CCC;
+}
+
+
+h1 {
+	color: #7EB543;
+}
+
+#content em a{
+	text-decoration:none;
+	color: #7EB543;
+}
+
+#banner {
+	margin-left: auto;
+	margin-right: auto;
+
+	border: 1px solid gray;
+	border-bottom: none;
+
+	height: 100px;
+	width: 800px;
+	background-image: url('gfx/banner.png');
+
+}
+
+#footer {
+	margin-left: auto;
+	margin-right: auto;
+	height: 50px;
+	width: 800px;
+	background-image: url('gfx/footer.png');
+	
+	border: 1px solid gray;
+	border-top: none;
+
+}
+
+#content {
+	background-color: white;
+	
+	width: 780px;
+	height: auto;
+	
+	margin-left: auto;
+	margin-right: auto;	
+	border: 1px solid gray;
+	border-bottom: none;
+	border-top: none;
+
+	padding: 10px;
+	padding-top: 30px;
+}
+
+#menu {
+	background-color: white;
+	color: #2191C0;
+	font-size: large;
+	font-weight: bold;
+	
+	width: 780px;
+	height: auto;
+	
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid gray;	
+	border-bottom: none;
+	border-top: none;
+	padding: 10px;
+	padding-top: 30px;
+}
+
+#menu a{
+	background-color: white;
+	color: #2191C0;
+	font-size: large;
+	font-weight: bold;
+	
+	width: 780px;
+	height: auto;
+	
+	margin-left: auto;
+	margin-right: auto;	
+	margin-bottom: 2px;
+	border: 1px solid gray;
+	text-align: center;
+	
+	text-decoration: none;
+
+	padding: 10px;
+	
+}
+
+.highlight {
+	color: #2191C0;
+	font-size: large;
+	font-weight: bold;
+}
+
+#menu a:hover{
+	background-color: #2E90BD;
+	color: #A1D8F1;
+}
+
+#menu .no-decoration{
+	border: none;
+	padding: 0px;
+	width: auto;
+        color: #6EAC2C;
+}
+
+.link {
+	font-style: oblique;
+	text-decoration: none;
+	color: #99E;
+}
+
+#upcoming .green, #top5events .green, #top5users .green {
+	color:#7CB440;
+	text-decoration: none;
+}
+
+#upcoming .blue, #top5events .blue, #top5users .blue {
+	font-style: oblique;
+	text-decoration: none;
+	color: #99E;
+}
+
+#events{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+#events th{
+	background-color: #2191C0;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+
+#events td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 10px;
+}
+
+#events tr{
+	border: 1px solid black;
+	border-collapse: collapse;
+}

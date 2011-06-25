@@ -1,0 +1,7 @@
+Dans MySQL (PostgreSQL unknown):
+
+Les fichiers avec accents ne sont pas chargés
+
+Dans PostgreSQL (MySQL ok):
+
+Les images avec accents ne sont pas chargées (probablement Linux-related though)

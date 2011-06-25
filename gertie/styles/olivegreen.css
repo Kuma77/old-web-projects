@@ -1,0 +1,276 @@
+/*------------------------------
+--Gertie.css
+--default style, olive green with a picture of grenoble as banner
+-------------------------------*/
+
+html {
+	width:100%;
+	margin:auto;
+	background-color: #72A126;
+}
+
+body {
+	width:100%;
+	margin:auto;
+	background-color: #72A126;
+}
+
+a{
+	color: #324015;
+	text-decoration: none;
+}
+
+a:hover{
+	text-shadow: #F00 0px 0px 15px;
+}
+/*-----------------------------
+  Generic
+------------------------------*/
+
+.small_bold{
+	font-size: small;
+	font-weight: bold;
+}
+
+h1{
+	color: #153137;
+}
+
+.red_bold{
+	font-weight: bolder;
+}
+
+.red_bold a{
+	color: #B00;
+}
+
+.pref_ok {
+	font-weight: bold;
+	color: red;
+
+}
+
+/*-----------------------------
+  Movies
+------------------------------*/
+.movie{
+  display: table;
+	margin: 5px;
+	width: 500px;
+	border: solid 2px green;
+}
+
+.movie hr {
+	color: #72A126;
+}
+
+.movie table {
+	margin: 20px;
+	padding-bottom: 40px;
+}
+
+.thumbnail{
+	height:100px;
+	float: left;
+
+}
+
+#synopsis{
+
+	text-align: justify;
+
+}
+
+#next_projection {
+
+	border:dotted #332E1B;
+	background-color: #8F9770;
+	font-weight: bold;
+	text-align: center;
+
+}
+
+td {
+	padding: 10px;
+
+}
+
+#poster {
+
+	display: inline;
+	float: left;
+}
+
+#all_projections {
+	text-decoration: underline;
+}
+
+/*-----------------------------
+  Actors
+------------------------------*/
+
+.actor{
+	display: table;
+	margin: 5px;
+	width: 300px;
+	border: solid 2px green;
+}
+
+
+/*-----------------------------
+  Producers
+------------------------------*/
+
+.producer{
+	display: table;
+	margin: 5px;
+	width: 300px;
+	border: solid 2px green;
+}
+
+
+
+/*-----------------------------
+  Body
+------------------------------*/
+#content{
+	width: 780px;
+	height: auto;
+	margin: 10px;
+	border: 10px #AAA;
+	background-color: #C0E19A;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	padding: 10px;
+}
+
+
+h1{
+	text-align: center;
+
+}
+
+#projections table{
+	border: dashed 1px;
+}
+
+#projections td{
+	border: dashed 1px;
+}
+
+#projections tr{
+	border: dashed 1px;
+}
+
+
+/*-----------------------------
+  Header
+-------------------------------*/
+#header{
+	width: 800px;
+	height: 230px;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#banner{
+	text-align: center;
+	background-image: url("../images/banner.jpg");
+	width: 800px;
+	height: 159px;
+}
+
+#banner a{
+	color: transparent;
+}
+
+#banner a:hover{
+}
+
+#menu{}
+
+.tab{
+	display: inline;
+	text-align: center;
+	background-color: #DFFD9F;
+	border: solid 1px;
+	border-color: #637D29;
+	padding: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 70px;
+	height:25px;
+  font-size: 10px;
+}
+
+#links{ 
+	border: none;
+	float: left;
+	height: 40px;
+	margin: 10px;
+}
+
+#search{
+	font-size: small; 
+	text-align: center;
+	width: auto;
+	height: 50px;
+	padding: 10px;
+	float: right;
+}
+
+#title{
+	display: inline;
+	margin-left: 600px;
+	padding-top: 300px;
+	color: #7E2B1D;
+	font-size: xx-large;
+	font-weight: bold;
+  text-shadow:#FFF 0px 0px 30px;;
+}
+
+fieldset{
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+
+/*-----------------------------
+  Footer
+-------------------------------*/
+#footer{
+	background-color: #64802A;
+	text-align:center;
+	border: 1px #394029;
+	
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#validations{
+  border: none;
+}
+
+#validations a{
+	color: transparent;
+}
+
+#mentions{}
+
+#copyright{}
+
+/*-----------------------------
+  Search result
+------------------------------*/
+
+.search_result{
+    display: table;
+	margin: 5px;
+	width: 500px;
+	border: solid 2px green;
+}
